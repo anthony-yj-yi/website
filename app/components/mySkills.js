@@ -10,7 +10,7 @@ export default function MySkills() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/c_logo.png"
+                src="/logos/c_logo.png"
                 alt="C Logo"
                 width={100}
                 height={100}
@@ -20,7 +20,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/cpp_logo.svg"
+                src="/logos/cpp_logo.svg"
                 alt="C Logo"
                 width={100}
                 height={100}
@@ -30,7 +30,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/python_logo.png"
+                src="/logos/python_logo.png"
                 alt="C++ Logo"
                 width={100}
                 height={100}
@@ -40,7 +40,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/java_logo.png"
+                src="/logos/java_logo.png"
                 alt="Java Logo"
                 width={100}
                 height={100}
@@ -50,7 +50,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/javascript_logo.png"
+                src="/logos/javascript_logo.png"
                 alt="JavaScript Logo"
                 width={100}
                 height={100}
@@ -60,7 +60,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/css3_html5_logo.png"
+                src="/logos/css3_html5_logo.png"
                 alt="HTML & CSS Logo"
                 width={200}
                 height={100}
@@ -70,7 +70,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/bootstrap_logo.svg"
+                src="/logos/bootstrap_logo.svg"
                 alt="Bootstrap Logo"
                 width={115}
                 height={100}
@@ -80,7 +80,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/nodejs_logo.png"
+                src="/logos/nodejs_logo.png"
                 alt="Node.js Logo"
                 width={200}
                 height={100}
@@ -90,7 +90,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/react_logo.svg"
+                src="/logos/react_logo.svg"
                 alt="React Logo"
                 width={100}
                 height={100}
@@ -100,7 +100,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/nextjs_logo.svg"
+                src="/logos/nextjs_logo.svg"
                 alt="Next.js Logo"
                 width={200}
                 height={100}
@@ -110,7 +110,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/sql_logo.png"
+                src="/logos/sql_logo.png"
                 alt="SQL Logo"
                 width={100}
                 height={100}
@@ -120,7 +120,7 @@ export default function MySkills() {
             </div>
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
-                src="/mongodb_logo.webp"
+                src="/logos/mongodb_logo.webp"
                 alt="MongoDB Logo"
                 width={100}
                 height={100}

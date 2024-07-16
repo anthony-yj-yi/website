@@ -7,8 +7,13 @@ import ContactMe from './components/contactMe';
 
 export default function Home() {
   return (
-    <main>
-      <section className="ml-[15%] mr-[15%] mt-[5%]">
+    <main className="text-slate-300">
+      <section
+      className="bg-contain"
+      style={{
+        backgroundImage: 'url(/bg1.jpg)'
+      }}>
+        <section className="ml-[15%] mr-[15%] mt-[5%]">
         <AboutMe></AboutMe>
       </section>
 
@@ -19,6 +24,9 @@ export default function Home() {
       <section className="ml-[15%] mr-[15%] mt-[5%] w-1/2">
         <ExperienceTimeline></ExperienceTimeline>
       </section>
+
+      </section>
+      
 
       <section className="ml-[15%] mr-[15%] mt-[5%]">
         <ContactMe></ContactMe>

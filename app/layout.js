@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className='{inter.className} bg-contain'
+      style={{
+        backgroundImage: 'url(/bg2.jpg)'
+      }}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}

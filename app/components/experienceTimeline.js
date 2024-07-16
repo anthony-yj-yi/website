@@ -18,7 +18,11 @@ export default function ExperienceTimeline() {
     return (
         <div>
             <h1 className="text-4xl font-bold">Experience</h1>
-            <Timeline>
+            <Timeline
+            sx={{
+                paddingLeft: 0
+            }}
+            >
             <CustomTimelineItem>
                 <div className="w-1/3">
                 <TimelineContent>
@@ -62,7 +66,7 @@ export default function ExperienceTimeline() {
                     professional experience in the pharmaceutical industry, refining my expertise
                     in investigations, and project management. Over the course of my five-year
                     career, I progressively took on more responsibility, ultimately leading to the
-                    ownership of investigations and projects.   
+                    ownership of investigations.   
                     </Typography>
                 </div>
                 </TimelineOppositeContent>
