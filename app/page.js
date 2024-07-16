@@ -28,7 +28,7 @@ export default function Home() {
       </section>
       
 
-      <section className="ml-[15%] mr-[15%] mt-[5%]">
+      <section className="ml-[15%] mr-[15%] mt-[2%] mb-[2%]">
         <ContactMe></ContactMe>
       </section>
     </main>
