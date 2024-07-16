@@ -58,12 +58,11 @@ export default function ExperienceTimeline() {
                 <div className="text-left">
                     <h1 className="text-2xl font-bold">Quality and Compliance Roles in Pharmaceuticals</h1>
                     <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum    
+                    Prior to transitioning into software development, I acquired valuable
+                    professional experience in the pharmaceutical industry, refining my expertise
+                    in investigations, and project management. Over the course of my five-year
+                    career, I progressively took on more responsibility, ultimately leading to the
+                    ownership of investigations and projects.   
                     </Typography>
                 </div>
                 </TimelineOppositeContent>
