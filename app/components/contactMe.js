@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function ContactMe() {
     return (
-        <div className="flex flex-row justify-between pt-[2%] pb-[2%] pl-[10%] pr-[10%]">
+        <div className="flex flex-row justify-between pt-[2%] pb-[2%] md:pl-[10%] pl-[5%] md:pr-[10%] pr-[5%]">
             <div>
                 <h1 className="text-4xl font-bold pb-[5%]">Contact Me</h1>
                 <div className="flex flex-row items-center">
@@ -21,7 +21,7 @@ export default function ContactMe() {
                 </div>
             </div>
             <div className="flex flex-col justify-end">
-                <p className="text-sm">This website was built in JavaScript using Next.js and deployed with Vercel.</p>
+                <p className="md:text-sm text-xs">This website was built in JavaScript using Next.js and deployed with Vercel.</p>
             </div>
         </div>
         
