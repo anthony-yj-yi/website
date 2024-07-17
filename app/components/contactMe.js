@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function ContactMe() {
     return (
-        <div className="flex flex-row justify-between pt-[2%] pb-[2%] md:pl-[10%] pl-[5%] md:pr-[10%] pr-[5%]">
+        <div className="flex flex-row justify-between pt-[2%] pb-[2%] md:pl-[10%] pl-[5%] md:pr-[10%]">
             <div>
                 <h1 className="text-4xl font-bold pb-[5%]">Contact Me</h1>
                 <div className="flex flex-row items-center">
