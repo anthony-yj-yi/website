@@ -38,7 +38,7 @@ export default function ExperienceTimeline() {
                 </TimelineSeparator>
                 <TimelineOppositeContent>
                 <div className="text-left">
-                    <h1 className="text-2xl font-bold">Co-op Developer/Automation</h1>
+                    <h1 className="text-2xl font-bold">Co-op Developer / Automation</h1>
                     <p className="text-lg">
                     At the Ontario Public Service, I served as a Co-op Developer/Automation,
                     focusing on enhancing system reliability and efficiency through automated
