@@ -1,12 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
-
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function MySkills() {
     return (
-        <div>
-            <h1 className="text-4xl font-bold">My Skills</h1>
+        <div className="h-screen w-screen pl-[15%] pr-[15%]">
+            <h1 className="text-4xl font-bold text-center mt-[2%] mb-[2%]">My Skills</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
@@ -129,10 +126,6 @@ export default function MySkills() {
                 <p className="text-center text-sm">MongoDB</p>
             </div>
             </div>
-            <Link href="/resume.pdf" target="_blank">
-                View Full Resume
-                <OpenInNewIcon></OpenInNewIcon>
-            </Link>
         </div>
     );
 }

@@ -8,27 +8,22 @@ import ContactMe from './components/contactMe';
 export default function Home() {
   return (
     <main className="text-slate-300">
-      <section
-      className="bg-contain"
-      style={{
-        backgroundImage: 'url(/bg1.jpg)'
-      }}>
-        <section className="ml-[15%] mr-[15%] mt-[5%]">
+        <section className="bg-cover"
+        style={{
+          backgroundImage: 'url(/bg1.jpg)'
+        }}>
         <AboutMe></AboutMe>
       </section>
 
-      <section className="ml-[15%] mr-[15%] mt-[5%]">
+      <section>
         <MySkills></MySkills>
       </section>
 
-      <section className="ml-[15%] mr-[15%] mt-[5%] w-1/2">
+      <section className="pl-[15%] pr-[15%] pt-[5%]">
         <ExperienceTimeline></ExperienceTimeline>
       </section>
 
-      </section>
-      
-
-      <section className="ml-[15%] mr-[15%] mt-[2%] mb-[2%]">
+      <section>
         <ContactMe></ContactMe>
       </section>
     </main>

@@ -5,8 +5,11 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
+
+import Link from "next/link";
+
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 const CustomTimelineItem = styled(TimelineItem)(({ theme }) => ({
     '&:first-of-type::before': {
@@ -17,16 +20,16 @@ const CustomTimelineItem = styled(TimelineItem)(({ theme }) => ({
 export default function ExperienceTimeline() {
     return (
         <div>
-            <h1 className="text-4xl font-bold">Experience</h1>
+            <h1 className="text-4xl font-bold text-center mt-[2$] mb-[2%]">My Work Experience</h1>
             <Timeline
             sx={{
                 paddingLeft: 0
             }}
             >
             <CustomTimelineItem>
-                <div className="w-1/3">
+                <div>
                 <TimelineContent>
-                <Typography>Sep 2023 - Apr 2024</Typography>
+                <p className="text-xl">Sep 2023 - Apr 2024</p>
                 </TimelineContent>
                 </div>
                 <TimelineSeparator>
@@ -36,7 +39,7 @@ export default function ExperienceTimeline() {
                 <TimelineOppositeContent>
                 <div className="text-left">
                     <h1 className="text-2xl font-bold">Co-op Developer/Automation</h1>
-                    <Typography>
+                    <p className="text-lg">
                     At the Ontario Public Service, I served as a Co-op Developer/Automation,
                     focusing on enhancing system reliability and efficiency through automated
                     testing and optimization strategies. I developed and debugged JUnit test
@@ -44,14 +47,14 @@ export default function ExperienceTimeline() {
                     frameworks, I automated browser testing, reducing manual testing dependency
                     for new features. I enhanced application performance by optimizing SQL queries
                     and utilized SoapUI for API testing, ensuring accurate data processing.
-                    </Typography>
+                    </p>
                 </div>
                 </TimelineOppositeContent>
             </CustomTimelineItem>
             <CustomTimelineItem>
-                <div className="w-1/3">
+                <div>
                 <TimelineContent>
-                <Typography>Oct 2017 - Dec 2022</Typography>
+                <p className="text-xl">Oct 2017 - Dec 2022</p>
                 </TimelineContent>
                 </div>
                 <TimelineSeparator>
@@ -61,17 +64,21 @@ export default function ExperienceTimeline() {
                 <TimelineOppositeContent>
                 <div className="text-left">
                     <h1 className="text-2xl font-bold">Quality and Compliance Roles in Pharmaceuticals</h1>
-                    <Typography>
+                    <p className="text-lg">
                     Prior to transitioning into software development, I acquired valuable
                     professional experience in the pharmaceutical industry, refining my expertise
                     in investigations, and project management. Over the course of my five-year
                     career, I progressively took on more responsibility, ultimately leading to the
                     ownership of investigations.   
-                    </Typography>
+                    </p>
                 </div>
                 </TimelineOppositeContent>
             </CustomTimelineItem>
             </Timeline>
+            <Link href="/resume.pdf" target="_blank" className="text-xl">
+                View Full Resume
+                <OpenInNewIcon></OpenInNewIcon>
+            </Link>
         </div>
     );
 }
