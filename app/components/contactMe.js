@@ -7,7 +7,7 @@ export default function ContactMe() {
     return (
         <div className="flex flex-row justify-between pt-[2%] pb-[2%]">
             <div className=" pl-[15%]">
-                <h1 className="text-4xl font-bold">Contact Me</h1>
+                <h1 className="text-4xl font-bold pb-[5%]">Contact Me</h1>
                 <div className="flex flex-row items-center">
                 <Link href="mailto:anthony.yj.yi@gmail.com">
                     <EmailIcon style={{ height: '50px', width: '50px' }}></EmailIcon>

@@ -10,21 +10,14 @@ export default function Home() {
     <main className="text-slate-300">
         <section className="bg-cover"
         style={{
-          backgroundImage: 'url(/bg1.jpg)'
+          backgroundImage: 'url(/bg2.jpg)'
         }}>
-        <AboutMe></AboutMe>
-      </section>
-
-      <section>
-        <MySkills></MySkills>
-      </section>
-
-      <section>
-        <ExperienceTimeline></ExperienceTimeline>
-      </section>
-
-      <section>
-        <ContactMe></ContactMe>
+        <div className="flex flex-col">
+          <AboutMe></AboutMe>
+          <MySkills></MySkills>
+          <ExperienceTimeline></ExperienceTimeline>
+          <ContactMe></ContactMe>
+        </div>
       </section>
     </main>
   );
