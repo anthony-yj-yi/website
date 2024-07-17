@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MySkills() {
     return (
         <div className="w-full md:h-screen md:pl-[8%] pl-[4%] md:pr-[8%] pr-[4%]">
-            <h1 className="text-4xl font-bold text-center mt-[2%] mb-[2%]">My Skills</h1>
+            <h1 className="text-4xl font-bold text-center mt-[5%] md:mt-[2%] mb-[5%] md:mb-[2%]">My Skills</h1>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <div className="p-4 shadow-md flex flex-col items-center justify-between">
                 <Image
