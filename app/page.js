@@ -19,7 +19,7 @@ export default function Home() {
         <MySkills></MySkills>
       </section>
 
-      <section className="pl-[15%] pr-[15%] pt-[5%]">
+      <section>
         <ExperienceTimeline></ExperienceTimeline>
       </section>
 

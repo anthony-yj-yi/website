@@ -19,7 +19,7 @@ const CustomTimelineItem = styled(TimelineItem)(({ theme }) => ({
 
 export default function ExperienceTimeline() {
     return (
-        <div>
+        <div className="pl-[15%] pr-[15%] flex flex-col">
             <h1 className="text-4xl font-bold text-center mt-[2$] mb-[2%]">My Work Experience</h1>
             <Timeline
             sx={{
