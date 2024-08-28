@@ -10,9 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className='{inter.className} bg-cover bg-center'
-      style={{
-        backgroundImage: 'url(/bg2.jpg)'
-      }}>
+      >
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}
