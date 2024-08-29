@@ -1,6 +1,6 @@
 'use client'
 
-import './Page.css';
+import './jobboard.css';
 import JobsTable from '../components/jobsTable.js';
 import SearchBar from '../components/searchBar.js';
 import React, { useState } from 'react';
@@ -18,15 +18,14 @@ export default function App() {
     setJobs(data)
   }
 
-
   return (
     <div className="App">
       <header className="App-header">
-        <div className="flex justify-between m-5 font-semibold text-gray-900 dark:text-gray-300">
+        <div className="flex justify-between m5-5 mb-5 ml-24 mr-24 font-semibold text-gray-900 dark:text-gray-300">
           <div className="flex justify-start items-center gap-4">
-            <img src={"logos/adzuna_logo.png"} alt="Adzuna Logo Not Found" className="max-h-10"/>
-            <h3 className="text-2xl">Adzuna Job Search</h3>
-            <h4 className="text-lg hover:cursor-pointer"
+            <img src={"logos/adzuna_logo.png"} alt="Adzuna Logo Not Found" className="max-h-10 mb-1"/>
+            <h3 className="text-2xl">Search Jobs on Adzuna</h3>
+            <h4 className="mt-1 text-lg hover:cursor-pointer"
             onClick={showModal}>About</h4>
           </div>
           <SearchBar handler={handleSearch} querySize={numberOfResults}></SearchBar>
@@ -36,7 +35,7 @@ export default function App() {
         {
         jobs !== null
         ? <JobsTable jobs={jobs}></JobsTable>
-        : <p className="text-center">Search jobs using the search bar at the top.</p>
+        : <p className="text-center mt-10">Search the Adzuna job board using the search bar at the top.</p>
         }
       </section>
       {isModalVisible && (

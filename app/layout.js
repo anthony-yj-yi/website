@@ -3,6 +3,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavBar from './components/navBar';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       >
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
+            <NavBar></NavBar>
             {children}
           </ThemeProvider>
         </AppRouterCacheProvider>

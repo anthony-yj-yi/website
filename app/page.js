@@ -7,7 +7,10 @@ import ContactMe from './components/contactMe';
 
 export default function Home() {
   return (
-    <main className="text-slate-300">
+    <main className="text-slate-300"
+    style={{
+      backgroundImage: 'url(/bg2.jpg)'
+    }}>
         <section className="bg-cover"
         style={{
           backgroundImage: 'url(/bg1.jpg)'
