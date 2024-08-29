@@ -2,9 +2,7 @@ const adzunaApiId = process.env.NEXT_PUBLIC_ADZUNA_API_ID
 const adzunaApiKey = process.env.NEXT_PUBLIC_ADZUNA_API_KEY
 
 export default async function fetchAdzunaJobs(searchText, resultsPerPage) {
-	console.log(adzunaApiId)
-	console.log(adzunaApiKey)
-	const adzunaUrl = `http://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${adzunaApiId}&app_key=${adzunaApiKey}&results_per_page=${resultsPerPage}&what=${searchText}&content-type=application/json`
+	const adzunaUrl = `https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${adzunaApiId}&app_key=${adzunaApiKey}&results_per_page=${resultsPerPage}&what=${searchText}&content-type=application/json`
 	try {
 		const response = await fetch(adzunaUrl)
 		const result = await response.json()
