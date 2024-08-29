@@ -14,7 +14,6 @@ export default function App() {
   const [jobs, setJobs] = useState(null)
 
   const handleSearch = (data) => {
-    console.log(data)
     setJobs(data)
   }
 
