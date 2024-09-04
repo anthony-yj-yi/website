@@ -6,6 +6,7 @@
 @media (prefers-color-scheme: dark) {
   .App {
     background-color: #282c34;
+    height: 100vh;
   }
 }
 
