@@ -10,7 +10,7 @@ export default function NavBar() {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <button 
                     type="button" 
-                    className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden bg-gray-100 text-gray-400 hover:bg-gray-700"
+                    className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-gray-400 bg-gray-700"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-controls="navbar-default"
                     aria-expanded={isOpen}
@@ -26,7 +26,7 @@ export default function NavBar() {
                             <a href="/" className="block py-2 px-3 text-white  rounded  md:p-0 md:text-blue-500 bg-blue-600 md:bg-transparent" aria-current="page">Home</a>
                         </li>
                         <li className="relative group">
-                            <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3md:border-0 md:p-0 text-white md:hover:text-blue-500 focus:text-white hover:bg-gray-700 md:hover:bg-transparent">Projects 
+                            <button id="dropdownNavbarLink" className="flex items-center justify-between w-full py-2 px-3 md:border-0 md:p-0 text-white md:hover:text-blue-500 focus:text-white hover:bg-gray-700 md:hover:bg-transparent">Projects 
                                 <svg className="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
                                 </svg>
