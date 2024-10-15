@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import fetchAdzunaJobs from '../modules/adzunaJobs.js';
 
-export default function SearchBar({handler, querySize}) {
+export default function SearchBar({handler, querySize, grow=false}) {
     const [searchQuery, setSearchQuery] = useState('')
     const handleSubmit = async (event) => {
         event.preventDefault()
@@ -10,10 +10,10 @@ export default function SearchBar({handler, querySize}) {
     }
 
     return (
-        <form className="w-1/4" onSubmit={handleSubmit}>
+        <form className={`${grow ? "flex-grow": "w-1/4"}`} onSubmit={handleSubmit}>
             <div className="flex"> 
                 <div className="relative w-full">
-                    <input type="search" id="search" className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                    <input type="search" id="search" className="block px-1 py-2 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
                     placeholder="Search Jobs (e.g. Software Developer)"
                     required
                     value={searchQuery}
