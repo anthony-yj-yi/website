@@ -54,6 +54,15 @@ export default function App() {
     </div>
   )
 
+  const jobsResults = () => {
+    if (!jobs) {
+      return <p className="text-center mt-10">Search the Adzuna job board using the search bar at the top.</p>;
+    } else if (jobs.length === 0) {
+      return <p className="text-center mt-10">No jobs were found matching the search criteria.</p>;
+    }
+    return <JobsTable jobs={jobs} />;
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -65,9 +74,7 @@ export default function App() {
       </header>
       <section>
         {
-          jobs !== undefined && jobs !== null
-            ? <JobsTable jobs={jobs}></JobsTable>
-            : <p className="text-center mt-10">Search the Adzuna job board using the search bar at the top.</p>
+          jobsResults()
         }
       </section>
       {isModalVisible && (
