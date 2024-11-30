@@ -51,7 +51,7 @@ export default function SpinWheel() {
 
         context.textAlign = "center";
         context.fillStyle = "#000";
-        context.font = "16px Arial";
+        context.font = "1.25rem Arial";
         context.fillText(input, 0, 0);
         context.restore();
       });
@@ -142,9 +142,9 @@ export default function SpinWheel() {
           <p className="text-center text-black dark:text-white">{warning ? warning : "Add to the wheel and spin!"}</p>
         </div>
         <div className="canvas-container" style={{ position: "relative" }}>
-          <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={300} height={300} />
+          <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={window.innerWidth < 768 ? 300 : 500} height={window.innerWidth < 768 ? 300 : 500} />
           <button
-            className="bg-black text-white z-0 absolute w-[30%] h-[30%] cursor-pointer rounded-full border-black"
+            className="bg-black text-white text-lg z-0 absolute w-[30%] h-[30%] cursor-pointer rounded-full border-black"
             id="spin-button"
             style={{
               top: "50%",
@@ -160,7 +160,7 @@ export default function SpinWheel() {
           <input
             type="text"
             value={newInput}
-            className="bg-white border border-gray-300 text-gray-900 text-lg md:text-sm rounded-lg focus:ring-blue-500
+            className="bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500
           focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
           dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Add item here"
@@ -169,7 +169,7 @@ export default function SpinWheel() {
           />
           <button type="button"
             className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium 
-          rounded-lg text-lg md:text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 min-w-fit"
+          rounded-lg text-lg px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 min-w-fit"
             onClick={handleAddInput}
           >Add Section</button>
 
@@ -185,14 +185,14 @@ export default function SpinWheel() {
                   type="text"
                   id={`input-${index}`}
                   defaultValue={input}
-                  className="bg-white border border-gray-300 text-gray-900 text-lg md:text-sm rounded-lg focus:ring-blue-500
+                  className="bg-white border border-gray-300 text-gray-900 text-lg rounded-lg focus:ring-blue-500
                 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white min-w-40
                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   onKeyDown={(e) => { if (e.key === "Enter") handleUpdateInput(input, e.target.value) }}
                 />
                 <button type="button"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg 
-                  text-lg md:text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 min-w-fit"
+                  text-lg px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 min-w-fit"
                   onClick={(e) => {
                     const inputValue = document.querySelector(`#input-${index}`).value;
                     handleUpdateInput(input, inputValue)
@@ -201,7 +201,7 @@ export default function SpinWheel() {
                 </button>
                 <button type="button"
                   className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg
-                  text-lg md:text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                  text-lg px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
                   onClick={() => handleDeleteInput(input, index)}>
                   Remove</button>
               </div>
