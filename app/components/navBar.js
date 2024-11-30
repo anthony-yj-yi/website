@@ -7,7 +7,7 @@ export default function NavBar() {
 
     return (
         <nav className="bg-gray-900 border-gray-700">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:mx-20 p-4">
                 <button 
                     type="button" 
                     className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-gray-400 bg-gray-700"
@@ -36,6 +36,9 @@ export default function NavBar() {
                                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
                                     <li>
                                         <a href="/jobboard" className="block px-4 py-2 hover:bg-gray-600 text-white">Adzuna Job Search</a>
+                                    </li>
+                                    <li>
+                                        <a href="/spinwheel" className="block px-4 py-2 hover:bg-gray-600 text-white">Dynamic Spin Wheel</a>
                                     </li>
                                 </ul>
                             </div>
