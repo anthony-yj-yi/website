@@ -78,7 +78,7 @@ export default function JobCard({ job, descriptionLength = 75}) {
                     id="default-modal"
                     tabIndex="-1"
                     aria-hidden="true"
-                    className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden bg-gray-900 bg-opacity-50 flex items-center justify-center"
+                    className="fixed inset-0 overflow-y-auto overflow-x-hidden bg-gray-900 bg-opacity-50 flex items-center justify-center"
                 >
                     <div className="relative p-4 w-full max-w-2xl max-h-full">
                         <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">

@@ -75,7 +75,7 @@ export default function ExperienceTimeline() {
                 </TimelineOppositeContent>
             </CustomTimelineItem>
             </Timeline>
-            <Link href="/resume.pdf" target="_blank" className="text-xl">
+            <Link href="/resume.pdf" target="_blank" className="text-xl ml-[5%]">
                 View Full Resume
                 <OpenInNewIcon></OpenInNewIcon>
             </Link>
