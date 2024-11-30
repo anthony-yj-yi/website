@@ -56,9 +56,9 @@ export default function App() {
 
   const jobsResults = () => {
     if (!jobs) {
-      return <p className="text-center mt-10">Search the Adzuna job board using the search bar at the top.</p>;
+      return <p className="text-center mt-10 text-gray-900 dark:text-gray-300">Search the Adzuna job board using the search bar at the top.</p>;
     } else if (jobs.length === 0) {
-      return <p className="text-center mt-10">No jobs were found matching the search criteria.</p>;
+      return <p className="text-center mt-10 text-gray-900 dark:text-gray-300">No jobs were found matching the search criteria.</p>;
     }
     return <JobsTable jobs={jobs} />;
   }
