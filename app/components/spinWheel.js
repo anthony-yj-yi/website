@@ -142,7 +142,7 @@ export default function SpinWheel() {
         <div className="canvas-container" style={{ position: "relative" }}>
           <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={300} height={300} />
           <button
-            className="bg-black text-white z-0 absolute w-[15%] h-[15%] cursor-pointer rounded-full border-black"
+            className="bg-black text-white z-0 absolute w-[25%] h-[25%] cursor-pointer rounded-full border-black"
             id="spin-button"
             style={{
               top: "50%",
