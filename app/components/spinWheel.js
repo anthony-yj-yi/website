@@ -90,12 +90,14 @@ export default function SpinWheel() {
     setNewInput("");
   };
 
-  const handleDeleteInput = (target) => {
+  const handleDeleteInput = (target, index) => {
     if (spinning) {
       setWarning("Wait until the wheel has stopped before removing.");
       return;
     }
-    setInputs(inputs.filter((input) => input !== target));
+    const newInputs = [...inputs]
+    newInputs.splice(index, 1)
+    setInputs(newInputs)
   };
 
   const handleUpdateInput = (target, newValue) => {
@@ -142,7 +144,7 @@ export default function SpinWheel() {
         <div className="canvas-container" style={{ position: "relative" }}>
           <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={300} height={300} />
           <button
-            className="bg-black text-white z-0 absolute w-[25%] h-[25%] cursor-pointer rounded-full border-black"
+            className="bg-black text-white z-0 absolute w-[30%] h-[30%] cursor-pointer rounded-full border-black"
             id="spin-button"
             style={{
               top: "50%",
@@ -200,7 +202,7 @@ export default function SpinWheel() {
                 <button type="button"
                   className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg
                   text-sm px-5 py-2.5 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-                  onClick={() => handleDeleteInput(input)}>
+                  onClick={() => handleDeleteInput(input, index)}>
                   Remove</button>
               </div>
             </li>
