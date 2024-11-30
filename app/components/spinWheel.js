@@ -142,9 +142,9 @@ export default function SpinWheel() {
           <p className="text-center text-black dark:text-white">{warning ? warning : "Add to the wheel and spin!"}</p>
         </div>
         <div className="canvas-container" style={{ position: "relative" }}>
-          <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={window.innerWidth < 768 ? 300 : 500} height={window.innerWidth < 768 ? 300 : 500} />
+          <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={360} height={360} />
           <button
-            className="bg-black text-white text-lg z-0 absolute w-[30%] h-[30%] cursor-pointer rounded-full border-black"
+            className="bg-black text-white text-lg z-0 absolute w-[30%] md:w-[25%] h-[30%] md:h-[25%] cursor-pointer rounded-full border-black"
             id="spin-button"
             style={{
               top: "50%",
