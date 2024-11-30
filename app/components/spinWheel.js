@@ -31,7 +31,7 @@ export default function SpinWheel() {
       context.translate(-centerX, -centerY);
 
       inputs.forEach((input, index) => {
-        const startAngle = index * anglePerSection - Math.PI / 2;
+        const startAngle = index * anglePerSection - Math.PI;
         const endAngle = startAngle + anglePerSection;
         const angle = totalSections === 1 ? 0 : startAngle + anglePerSection / 2;
 
@@ -46,7 +46,12 @@ export default function SpinWheel() {
         const canvasY = totalSections === 1 ? centerY - radius / 2 : centerY + Math.sin(angle) * radius * 0.6;
         context.translate(canvasX, canvasY);
 
-        const rotateAngle = (angle > Math.PI / 2 && angle < (3 * Math.PI) / 2) ? angle + Math.PI : angle;
+        const rotateAngle =
+          totalSections === 2
+            ? angle.valueOf
+            : (angle > Math.PI / 2 && angle < (3 * Math.PI) / 2)
+              ? angle + Math.PI
+              : angle;
         context.rotate(rotateAngle);
 
         context.textAlign = "center";
