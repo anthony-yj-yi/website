@@ -139,7 +139,7 @@ export default function SpinWheel() {
     <div className="flex flex-col md:flex-row w-full px-[20%] py-0 justify-evenly items-center space-y-8">
       <div className="flex-col space-y-8">
         <div>
-          <p className="text-black dark:text-white">{warning ? warning : "Add to the wheel and spin!"}</p>
+          <p className="text-center text-black dark:text-white">{warning ? warning : "Add to the wheel and spin!"}</p>
         </div>
         <div className="canvas-container" style={{ position: "relative" }}>
           <canvas className="-z-10" id="wheel-canvas" ref={canvasRef} width={300} height={300} />
