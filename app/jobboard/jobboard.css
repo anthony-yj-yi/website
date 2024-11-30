@@ -3,11 +3,10 @@
   pointer-events: none;
 }
 
-html {
-  background-color: #282c34;
-}
-
 @media (prefers-color-scheme: dark) {
+  html {
+    background-color: #282c34;
+  }
   .App {
     height: 100vh;
   }
