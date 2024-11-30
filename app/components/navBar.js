@@ -10,7 +10,7 @@ export default function NavBar() {
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between md:mx-20 p-4 mt-3 ml-3">
                 <button
                     type="button"
-                    className="inline-flex items-center p-2  text-sm rounded-lg md:hidden text-gray-400 bg-gray-700"
+                    className="inline-flex items-center p-2  text-sm rounded-lg md:hidden text-gray-400 bg-gray-700 dark:bg-gray-900"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-controls="navbar-default"
                     aria-expanded={isOpen}
